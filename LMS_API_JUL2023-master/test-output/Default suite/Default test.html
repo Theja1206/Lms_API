@@ -1,0 +1,452 @@
+<html>
+<head>
+<title>TestNG:  Default test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Default test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>9/7/0</td>
+</tr><tr>
+<td>Started on:</td><td>Fri Aug 18 12:25:43 MDT 2023</td>
+</tr>
+<tr><td>Total time:</td><td>17 seconds (17322 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to update a program without program Name", "User checks PUT request endpoint in Program Module"</td>
+<td><div><pre>java.lang.AssertionError: 2 expectations failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:51 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:118)
+	at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:28)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1663673785", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1663673785'><pre>java.lang.AssertionError: 2 expectations failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:51 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:118)
+	at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:28)
+</pre></div></td>
+<td>1</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to delete a program with valid Program Id", "User checks DELET request endpoint in Program Module"</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC05_DeleteReq_Prog.user_receives_status_code_with_success_message(TC05_DeleteReq_Prog.java:61)
+	at ✽.User receives Status Code with success message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC05_DeleteProgram_byID.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace243130253", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace243130253'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC05_DeleteReq_Prog.user_receives_status_code_with_success_message(TC05_DeleteReq_Prog.java:61)
+	at ✽.User receives Status Code with success message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC05_DeleteProgram_byID.feature:11)
+</pre></div></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to update a program with exisiting Program Name", "User checks PUT request endpoint in Program Module"</td>
+<td><div><pre>java.lang.AssertionError: 2 expectations failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:49 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:118)
+	at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:16)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1482151715", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1482151715'><pre>java.lang.AssertionError: 2 expectations failed.
+Expected status code &lt;400&gt; but was &lt;200&gt;.
+
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:49 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:118)
+	at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:16)
+</pre></div></td>
+<td>1</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to create a program with prog_ID", "TC01_Post_Program"</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinitions.TC01_PostReq_Program.user_receives_failed_status_code(TC01_PostReq_Program.java:122)
+	at ✽.User receives failed Status Code(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC01_PostProgram.feature:21)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1138954005", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1138954005'><pre>java.lang.AssertionError: expected [400] but found [201]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinitions.TC01_PostReq_Program.user_receives_failed_status_code(TC01_PostReq_Program.java:122)
+	at ✽.User receives failed Status Code(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC01_PostProgram.feature:21)
+</pre></div></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to delete a batch with valid batch Id", "DELETE REQUEST in Batch Module"</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:56 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC10_Delete_req_batch.user_receives_status_code_with_success_message_in_response(TC10_Delete_req_batch.java:33)
+	at ✽.User receives Status Code &lt;200&gt;with success message in response(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC10_Delete_Batch.feature:10)
+</pre></div><a href='#' onClick='toggleBox("stack-trace608590206", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace608590206'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:56 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC10_Delete_req_batch.user_receives_status_code_with_success_message_in_response(TC10_Delete_req_batch.java:33)
+	at ✽.User receives Status Code &lt;200&gt;with success message in response(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC10_Delete_Batch.feature:10)
+</pre></div></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to update a program without Program status", "User checks PUT request endpoint in Program Module"</td>
+<td><div><pre>java.lang.AssertionError: expected [400] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:122)
+	at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:34)
+</pre></div><a href='#' onClick='toggleBox("stack-trace1733433977", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1733433977'><pre>java.lang.AssertionError: expected [400] but found [500]
+	at org.testng.Assert.fail(Assert.java:99)
+	at org.testng.Assert.failNotEquals(Assert.java:1037)
+	at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+	at org.testng.Assert.assertEquals(Assert.java:122)
+	at org.testng.Assert.assertEquals(Assert.java:907)
+	at org.testng.Assert.assertEquals(Assert.java:917)
+	at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:122)
+	at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:34)
+</pre></div></td>
+<td>1</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to delete a program with valid Program Name", "User checks DELET request endpoint in Program Module"</td>
+<td><div><pre>java.lang.AssertionError: 1 expectation failed.
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=74
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC06_DeleteRq_ByName_Prog.user_receives_status_code_with_message(TC06_DeleteRq_ByName_Prog.java:33)
+	at ✽.User receives Status Code &lt;200&gt; with message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC06_DeleteProgram_byName.feature:11)
+</pre></div><a href='#' onClick='toggleBox("stack-trace906904117", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace906904117'><pre>java.lang.AssertionError: 1 expectation failed.
+Expected header &quot;Content-Type&quot; was not &quot;application/json&quot;, was &quot;text/plain;charset=UTF-8&quot;. Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=74
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+	at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+	at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+	at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+	at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+	at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+	at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+	at stepDefinitions.TC06_DeleteRq_ByName_Prog.user_receives_status_code_with_message(TC06_DeleteRq_ByName_Prog.java:33)
+	at ✽.User receives Status Code &lt;200&gt; with message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC06_DeleteProgram_byName.feature:11)
+</pre></div></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to create a program with valid details", "TC01_Post_Program"</td>
+<td></td>
+<td>4</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to update a program with valid Program Name", "User checks PUT request endpoint in Program Module"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to create a batch with valid reqbody", "Post Batch Request - Create new batch for the program"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to retrieve all programs with valid LMS API", "User checks GET Request in Program Module"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to update a program with invalidProgramID", "User checks PUT request endpoint in Program Module"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to retrieve program with invalid program ID", "User checks GET Request in Program Module"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if User able to retrieve program with valid ProgramID", "User checks GET Request in Program Module"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to update a program with invalidProgramName", "User checks PUT request endpoint in Program Module"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+<tr>
+<td title='cucumberRunner.TestRunner.runScenario()'><b>runScenario</b><br>Test class: cucumberRunner.TestRunner<br>Test method: Runs Cucumber Scenarios<br>Parameters: "Check if user able to update a program with valid details", "User checks PUT request endpoint in Program Module"</td>
+<td></td>
+<td>0</td>
+<td>cucumberRunner.TestRunner@13fd2ccd</td></tr>
+</table><p>
+</body>
+</html>

@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="16" passed="9" failed="7" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2023-08-18T12:25:43 MDT" name="Default suite" finished-at="2023-08-18T12:26:01 MDT" duration-ms="17322">
+    <groups>
+      <group name="cucumber">
+        <method signature="AbstractTestNGCucumberTests.runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" name="runScenario" class="io.cucumber.testng.AbstractTestNGCucumberTests"/>
+      </group> <!-- cucumber -->
+    </groups>
+    <test started-at="2023-08-18T12:25:43 MDT" name="Default test" finished-at="2023-08-18T12:26:01 MDT" duration-ms="17322">
+      <class name="cucumberRunner.TestRunner">
+        <test-method is-config="true" signature="setUpClass(org.testng.ITestContext)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:43 MDT" name="setUpClass" finished-at="2023-08-18T12:25:44 MDT" duration-ms="910" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@2296ed0d]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUpClass -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:44 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:48 MDT" duration-ms="4063" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to create a program with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TC01_Post_Program"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:48 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:49 MDT" duration-ms="853" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to create a program with prog_ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["TC01_Post_Program"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [201]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [201]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at stepDefinitions.TC01_PostReq_Program.user_receives_failed_status_code(TC01_PostReq_Program.java:122)
+at ✽.User receives failed Status Code(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC01_PostProgram.feature:21)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:49 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:50 MDT" duration-ms="528" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to retrieve all programs with valid LMS API"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks GET Request in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:50 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:50 MDT" duration-ms="414" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if User able to retrieve program with valid ProgramID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks GET Request in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:50 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:51 MDT" duration-ms="707" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to retrieve program with invalid program ID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks GET Request in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:51 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:52 MDT" duration-ms="868" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to update a program with valid details"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks PUT request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:52 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:53 MDT" duration-ms="1239" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to update a program with exisiting Program Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks PUT request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[2 expectations failed.
+Expected status code <400> but was <200>.
+
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:49 GMT
+Via=1.1 vegur
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 2 expectations failed.
+Expected status code <400> but was <200>.
+
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:49 GMT
+Via=1.1 vegur
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.CallSiteArray.defaultCallConstructor(CallSiteArray.java:57)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:263)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:118)
+at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:16)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:53 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:53 MDT" duration-ms="387" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to update a program with invalidProgramID"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks PUT request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:53 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:54 MDT" duration-ms="1033" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to update a program without program Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks PUT request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[2 expectations failed.
+Expected status code <400> but was <200>.
+
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:51 GMT
+Via=1.1 vegur
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 2 expectations failed.
+Expected status code <400> but was <200>.
+
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:51 GMT
+Via=1.1 vegur
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:118)
+at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:28)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:54 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:55 MDT" duration-ms="1024" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to update a program without Program status"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks PUT request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [400] but found [500]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [400] but found [500]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:907)
+at org.testng.Assert.assertEquals(Assert.java:917)
+at stepDefinitions.TC03_PutReq_ById_Prog.user_receive_http_status_code_and_error_message(TC03_PutReq_ById_Prog.java:122)
+at ✽.User receive HTTP Status code and error message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC03_PutProgram.feature:34)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:55 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:56 MDT" duration-ms="356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to update a program with valid Program Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks PUT request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:56 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:56 MDT" duration-ms="356" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to update a program with invalidProgramName"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks PUT request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:56 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:57 MDT" duration-ms="724" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to delete a program with valid Program Id"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks DELET request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at stepDefinitions.TC05_DeleteReq_Prog.user_receives_status_code_with_success_message(TC05_DeleteReq_Prog.java:61)
+at ✽.User receives Status Code with success message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC05_DeleteProgram_byID.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:57 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:57 MDT" duration-ms="330" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to delete a program with valid Program Name"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["User checks DELET request endpoint in Program Module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=74
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=74
+Date=Fri, 18 Aug 2023 18:25:53 GMT
+Via=1.1 vegur
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at stepDefinitions.TC06_DeleteRq_ByName_Prog.user_receives_status_code_with_message(TC06_DeleteRq_ByName_Prog.java:33)
+at ✽.User receives Status Code <200> with message(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC06_DeleteProgram_byName.feature:11)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:57 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:58 MDT" duration-ms="711" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to create a batch with valid reqbody"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["Post Batch Request - Create new batch for the program"]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method signature="runScenario(io.cucumber.testng.PickleWrapper,io.cucumber.testng.FeatureWrapper)[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:58 MDT" name="runScenario" description="Runs Cucumber Scenarios" data-provider="scenarios" finished-at="2023-08-18T12:25:59 MDT" duration-ms="678" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA["Check if user able to delete a batch with valid batch Id"]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA["DELETE REQUEST in Batch Module"]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[1 expectation failed.
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:56 GMT
+Via=1.1 vegur
+]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: 1 expectation failed.
+Expected header "Content-Type" was not "application/json", was "text/plain;charset=UTF-8". Headers are:
+Server=Cowboy
+Connection=keep-alive
+Content-Type=text/plain;charset=UTF-8
+Content-Length=50
+Date=Fri, 18 Aug 2023 18:25:56 GMT
+Via=1.1 vegur
+
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480)
+at org.codehaus.groovy.reflection.CachedConstructor.invoke(CachedConstructor.java:73)
+at org.codehaus.groovy.runtime.callsite.ConstructorSite$ConstructorSiteNoUnwrapNoCoerce.callConstructor(ConstructorSite.java:108)
+at org.codehaus.groovy.runtime.callsite.AbstractCallSite.callConstructor(AbstractCallSite.java:277)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure.validate(ResponseSpecificationImpl.groovy:512)
+at io.restassured.internal.ResponseSpecificationImpl$HamcrestAssertionClosure$validate$1.call(Unknown Source)
+at io.restassured.internal.ResponseSpecificationImpl.validate(ResponseSpecificationImpl.groovy:101)
+at io.restassured.internal.ValidatableResponseOptionsImpl.spec(ValidatableResponseOptionsImpl.java:288)
+at stepDefinitions.TC10_Delete_req_batch.user_receives_status_code_with_success_message_in_response(TC10_Delete_req_batch.java:33)
+at ✽.User receives Status Code <200>with success message in response(file:///C:/Users/nsuma/OneDrive/Desktop/Sample%20API/LMS_API_2023/src/test/java/features/TC10_Delete_Batch.feature:10)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- runScenario -->
+        <test-method is-config="true" signature="tearDownClass()[pri:0, instance:cucumberRunner.TestRunner@13fd2ccd]" started-at="2023-08-18T12:25:59 MDT" name="tearDownClass" finished-at="2023-08-18T12:26:01 MDT" duration-ms="2093" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDownClass -->
+      </class> <!-- cucumberRunner.TestRunner -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
